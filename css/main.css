@@ -1,0 +1,85 @@
+body, div {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.sky, .prairie {
+	width: 100%;
+}
+
+.sky {
+	position: relative;
+	height: 60%;
+	background: linear-gradient(to bottom, rgb(196, 228, 253), rgb(255, 255, 255));
+}
+
+.prairie {
+	height: 40%;
+	background: linear-gradient(to top, rgb(148, 190, 89), rgb(255, 255, 255));
+}
+
+.cloud {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	transform-origin: 0 0;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.cloud:before, .cloud:after {
+	display: block;
+	content: '';
+	background: #fff;
+}
+
+.cloud:before {
+	width: 62px;
+	height: 18px;
+	margin-top: 18px;
+	margin-left: -20px;
+	border-radius: 9px;
+}
+
+.cloud:after {
+	width: 20px;
+	height: 30px;
+	margin-top: -26px;
+	margin-left: -12px;
+	transform: skewX(10deg);
+	border-radius: 10px;
+}
+
+.cloud1 {
+	top: 2%;
+	left: 41%;
+	transform: scale(1.6);
+}
+
+.cloud2 {
+	top: 4%;
+	left: 80%;
+	transform: scale(1.5);
+}
+
+.cloud3 {
+	top: 9%;
+	left: 54%;
+	transform: scale(2);
+}
+
+.cloud4 {
+	top: 19%;
+	left: 65%;
+	transform: scale(1.2);
+}
+
+.cloud5 {
+	top: 21%;
+	left: 46%;
+	transform: scale(1.6);
+}
