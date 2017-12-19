@@ -17,6 +17,7 @@ body {
 .sky {
 	position: relative;
 	height: 60%;
+	overflow:hidden;
 	background: -webkit-linear-gradient(top, rgb(196, 228, 253), rgb(255, 255, 255));
 	background: -moz-linear-gradient(bottom, rgb(196, 228, 253), rgb(255, 255, 255));
 	background: -o-linear-gradient(bottom, rgb(196, 228, 253), rgb(255, 255, 255));
@@ -86,6 +87,7 @@ body {
 	left: 54%;
 	transform: scale(2);
 	opacity:.9;
+	animation:cloud3move 10s linear infinite;
 }
 
 .cloud4 {
@@ -110,4 +112,10 @@ body {
 	height:200px;
 	background: url('../img/rabbit.png') center no-repeat;
 	background-size:contain;
+}
+
+@keyframes cloud3move {
+	0%   {left:105%;}
+	50%  {left:-5%;}
+	100%  {left:-115%;}
 }
