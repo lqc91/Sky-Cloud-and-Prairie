@@ -73,6 +73,10 @@ body {
 	left: 41%;
 	transform: scale(1.6);
 	opacity:.8;
+	-webkit-animation:cloud1move 13.5s linear infinite;
+	-moz-animation:cloud1move 13.5s linear infinite;
+	-o-animation:cloud1move 13.5s linear infinite;
+	animation:cloud1move 13.5s linear infinite;
 }
 
 .cloud2 {
@@ -80,6 +84,10 @@ body {
 	left: 80%;
 	transform: scale(1.5);
 	opacity:.8;
+	-webkit-animation:cloud2move 12s linear 2s infinite backwards;
+	-moz-animation:cloud2move 12s linear 2s infinite backwards;
+	-o-animation:cloud2move 12s linear 2s infinite backwards;
+	animation:cloud2move 12s linear 2s infinite backwards;
 }
 
 .cloud3 {
@@ -87,6 +95,9 @@ body {
 	left: 54%;
 	transform: scale(2);
 	opacity:.9;
+	-webkit-animation:cloud3move 10s linear infinite;
+	-moz-animation:cloud3move 10s linear infinite;
+	-o-animation:cloud3move 10s linear infinite;
 	animation:cloud3move 10s linear infinite;
 }
 
@@ -95,6 +106,10 @@ body {
 	left: 65%;
 	transform: scale(1.2);
 	opacity:.7;
+	-webkit-animation:cloud4move 17s linear 1.5s infinite backwards;
+	-moz-animation:cloud4move 17s linear 1.5s infinite backwards;
+	-o-animation:cloud4move 17s linear 1.5s infinite backwards;
+	animation:cloud4move 17s linear 1.5s infinite backwards;
 }
 
 .cloud5 {
@@ -102,6 +117,10 @@ body {
 	left: 46%;
 	transform: scale(1.6);
 	opacity:.8;
+	-webkit-animation:cloud5move 12.5s linear infinite;
+	-moz-animation:cloud5move 12.5s linear infinite;
+	-o-animation:cloud5move 12.5s linear infinite;
+	animation:cloud5move 12.5s linear infinite;
 }
 
 .rabbit {
@@ -114,8 +133,107 @@ body {
 	background-size:contain;
 }
 
-@keyframes cloud3move {
-	0%   {left:105%;}
+@-webkit-keyframes cloud1move {
+	0%   {left:90%;}
 	50%  {left:-5%;}
-	100%  {left:-115%;}
+	100% {left:-100%;}
+}
+@-moz-keyframes cloud1move {
+	0%   {left:90%;}
+	50%  {left:-5%;}
+	100% {left:-100%;}
+}
+@-o-keyframes cloud1move {
+	0%   {left:90%;}
+	50%  {left:-5%;}
+	100% {left:-100%;}
+}
+@keyframes cloud1move {
+	0%   {left:90%;}
+	50%  {left:-5%;}
+	100% {left:-100%;}
+}
+
+@-webkit-keyframes cloud2move {
+	0%   {left:103%;}
+	50%  {left:-3%;}
+	100% {left:-109%;}
+}
+@-moz-keyframes cloud2move {
+	0%   {left:103%;}
+	50%  {left:-3%;}
+	100% {left:-109%;}
+}
+@-o-keyframes cloud2move {
+	0%   {left:103%;}
+	50%  {left:-3%;}
+	100% {left:-109%;}
+}
+@keyframes cloud2move {
+	0%   {left:103%;}
+	50%  {left:-3%;}
+	100% {left:-109%;}
+}
+
+@-webkit-keyframes cloud3move {
+	0%   {left:102%;}
+	50%  {left:-4%;}
+	100% {left:-110%;}
+}
+@-moz-keyframes cloud3move {
+	0%   {left:102%;}
+	50%  {left:-4%;}
+	100% {left:-110%;}
+}
+@-o-keyframes cloud3move {
+	0%   {left:102%;}
+	50%  {left:-4%;}
+	100% {left:-110%;}
+}
+@keyframes cloud3move {
+	0%   {left:102%;}
+	50%  {left:-4%;}
+	100% {left:-110%;}
+}
+
+@-webkit-keyframes cloud4move {
+	0%   {left:102%;}
+	50%  {left:0%;}
+	100% {left:-102%;}
+}
+@-moz-keyframes cloud4move {
+	0%   {left:102%;}
+	50%  {left:0%;}
+	100% {left:-102%;}
+}
+@-o-keyframes cloud4move {
+	0%   {left:102%;}
+	50%  {left:0%;}
+	100% {left:-102%;}
+}
+@keyframes cloud4move {
+	0%   {left:102%;}
+	50%  {left:0%;}
+	100% {left:-102%;}
+}
+
+@-webkit-keyframes cloud5move {
+	0%   {left:96%;}
+	50%  {left:-2%;}
+	100% {left:-100%;}
+}
+@-moz-keyframes cloud5move {
+	0%   {left:96%;}
+	50%  {left:-2%;}
+	100% {left:-100%;}
+}
+@-o-keyframes cloud5move {
+	0%   {left:96%;}
+	50%  {left:-2%;}
+	100% {left:-100%;}
+}
+@keyframes cloud5move {
+	0%   {left:96%;}
+	50%  {left:-2%;}
+	100% {left:-100%;}
 }
