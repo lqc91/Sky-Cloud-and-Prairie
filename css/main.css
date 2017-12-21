@@ -40,7 +40,6 @@ body {
 	transform-origin: 0 0;
 	border-radius: 50%;
 	background: #fff;
-	/*box-shadow:0px 0px 1px 1px #fff;*/
 }
 
 .cloud:before,
@@ -48,7 +47,6 @@ body {
 	display: block;
 	content: '';
 	background: #fff;
-	/*box-shadow:0px 0px 1px 1px #fff;*/
 }
 
 .cloud:before {
@@ -86,7 +84,6 @@ body {
 	top: 9%;
 	left: 54%;
 	transform: scale(2);
-	opacity:.9;
 }
 
 .cloud4 {
@@ -125,63 +122,59 @@ body {
 .cloud2,
 .cloud2:before,
 .cloud2:after {
-	/*-webkit-animation:cloud2move 12s linear 2s infinite backwards;
+	-webkit-animation:cloud2move 12s linear 2s infinite backwards;
 	-moz-animation:cloud2move 12s linear 2s infinite backwards;
 	-o-animation:cloud2move 12s linear 2s infinite backwards;
-	animation:cloud2move 12s linear 2s infinite backwards;*/
-	/*box-shadow:0px 0px 3px 3px #fff;*/
+	animation:cloud2move 12s linear 2s infinite backwards;
 }
 
 .cloud3,
 .cloud3:before,
 .cloud3:after {
-	/*-webkit-animation:cloud3move 10s linear infinite;
+	-webkit-animation:cloud3move 10s linear infinite;
 	-moz-animation:cloud3move 10s linear infinite;
 	-o-animation:cloud3move 10s linear infinite;
-	animation:cloud3move 10s linear infinite;*/
-	/*box-shadow:0px 0px 3px 3px #fff;*/
+	animation:cloud3move 10s linear infinite;
 }
 
 .cloud4,
 .cloud4:before,
 .cloud4:after {
-	/*-webkit-animation:cloud4move 17s linear 1.5s infinite backwards;
+	-webkit-animation:cloud4move 17s linear 1.5s infinite backwards;
 	-moz-animation:cloud4move 17s linear 1.5s infinite backwards;
 	-o-animation:cloud4move 17s linear 1.5s infinite backwards;
-	animation:cloud4move 17s linear 1.5s infinite backwards;*/
-	/*box-shadow:0px 0px 3px 3px #fff;*/
+	animation:cloud4move 17s linear 1.5s infinite backwards;
 }
 
 .cloud5,
 .cloud5:before,
 .cloud5:after {
-	-webkit-animation:cloud5move 12.5s linear infinite;
-	-moz-animation:cloud5move 12.5s linear infinite;
-	-o-animation:cloud5move 12.5s linear infinite;
-	animation:cloud5move 12.5s linear infinite;
-	/*box-shadow:-1px 0px 5px 1.5px #fff;*/
+	-webkit-animation:cloud5move 13s linear infinite;
+	-moz-animation:cloud5move 13s linear infinite;
+	-o-animation:cloud5move 13s linear infinite;
+	animation:cloud5move 13s linear infinite;
 }
 
 @-webkit-keyframes cloud1move {
-	0%   {left:90%;box-shadow:1px 0px 2px 1px #fff;}
+	0%   {left:90%;box-shadow:1px 0 2px 1px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-5%;}
 	100% {left:-100%;}
 }
 @-moz-keyframes cloud1move {
-	0%   {left:90%;box-shadow:1px 0px 2px 1px #fff;}
+	0%   {left:90%;box-shadow:1px 0 2px 1px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-5%;}
 	100% {left:-100%;}
 }
 @-o-keyframes cloud1move {
-	0%   {left:90%;box-shadow:1px 0px 2px 1px #fff;}
+	0%   {left:90%;box-shadow:1px 0 2px 1px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-5%;}
 	100% {left:-100%;}
 }
 @keyframes cloud1move {
-	0%   {left:90%;box-shadow:1px 0px 2px 1px #fff;}
+	0%   {left:90%;box-shadow:1px 0 2px 1px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-5%;}
 	100% {left:-100%;}
@@ -209,22 +202,26 @@ body {
 }
 
 @-webkit-keyframes cloud3move {
-	0%   {left:102%;}
+	0%   {left:102%;box-shadow:-1px 1px 3px .5px #fff;}
+	10%  {box-shadow:none;}
 	50%  {left:-4%;}
 	100% {left:-110%;}
 }
 @-moz-keyframes cloud3move {
-	0%   {left:102%;}
+	0%   {left:102%;box-shadow:-1px 1px 3px .5px #fff;}
+	10%  {box-shadow:none;}
 	50%  {left:-4%;}
 	100% {left:-110%;}
 }
 @-o-keyframes cloud3move {
-	0%   {left:102%;}
+	0%   {left:102%;box-shadow:-1px 1px 3px .5px #fff;}
+	10%  {box-shadow:none;}
 	50%  {left:-4%;}
 	100% {left:-110%;}
 }
 @keyframes cloud3move {
-	0%   {left:102%;}
+	0%   {left:102%;box-shadow:-1px 1px 3px .5px #fff;}
+	10%  {box-shadow:none;}
 	50%  {left:-4%;}
 	100% {left:-110%;}
 }
@@ -251,25 +248,25 @@ body {
 }
 
 @-webkit-keyframes cloud5move {
-	0%   {left:96%;box-shadow:-1px 0px 5px 1.5px #fff;}
+	0%   {left:96%;box-shadow:-1px 0 5px 1.5px #fff;}
 	15%  {box-shadow:none;}
 	50%  {left:-2%;}
 	100% {left:-100%;}
 }
 @-moz-keyframes cloud5move {
-	0%   {left:96%;box-shadow:-1px 0px 5px 1.5px #fff;}
+	0%   {left:96%;box-shadow:-1px 0 5px 1.5px #fff;}
 	15%  {box-shadow:none;}
 	50%  {left:-2%;}
 	100% {left:-100%;}
 }
 @-o-keyframes cloud5move {
-	0%   {left:96%;box-shadow:-1px 0px 5px 1.5px #fff;}
+	0%   {left:96%;box-shadow:-1px 0 5px 1.5px #fff;}
 	15%  {box-shadow:none;}
 	50%  {left:-2%;}
 	100% {left:-100%;}
 }
 @keyframes cloud5move {
-	0%   {left:96%;box-shadow:-1px 0px 5px 1.5px #fff;}
+	0%   {left:96%;box-shadow:-1px 0 5px 1.5px #fff;}
 	15%  {box-shadow:none;}
 	50%  {left:-2%;}
 	100% {left:-100%;}
