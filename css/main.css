@@ -68,9 +68,7 @@ body {
 
 .cloud1 {
 	top: 2%;
-	left: 41%;
 	transform: scale(1.6);
-	opacity:.8;
 }
 
 .cloud2 {
@@ -110,164 +108,188 @@ body {
 	background-size:contain;
 }
 
-.cloud1,
+.cloud1 {
+	animation:cloud1-animate 13.5s linear infinite backwards, cloud1-opacity 13.5s linear infinite backwards;
+}
+
 .cloud1:before,
 .cloud1:after {
-	-webkit-animation:cloud1move 13.5s linear infinite;
-	-moz-animation:cloud1move 13.5s linear infinite;
-	-o-animation:cloud1move 13.5s linear infinite;
-	animation:cloud1move 13.5s linear infinite;
+	-webkit-animation:cloud1-animate 13.5s linear infinite backwards;
+	-moz-animation:cloud1-animate 13.5s linear infinite backwards;
+	-o-animation:cloud1-animate 13.5s linear infinite backwards;
+	animation:cloud1-animate 13.5s linear infinite backwards;
 }
 
 .cloud2,
 .cloud2:before,
 .cloud2:after {
-	-webkit-animation:cloud2move 12s linear 2s infinite backwards;
-	-moz-animation:cloud2move 12s linear 2s infinite backwards;
-	-o-animation:cloud2move 12s linear 2s infinite backwards;
-	animation:cloud2move 12s linear 2s infinite backwards;
+	-webkit-animation:cloud2-animate 12s linear 2s infinite backwards;
+	-moz-animation:cloud2-animate 12s linear 2s infinite backwards;
+	-o-animation:cloud2-animate 12s linear 2s infinite backwards;
+	animation:cloud2-animate 12s linear 2s infinite backwards;
 }
 
 .cloud3,
 .cloud3:before,
 .cloud3:after {
-	-webkit-animation:cloud3move 10s linear infinite;
-	-moz-animation:cloud3move 10s linear infinite;
-	-o-animation:cloud3move 10s linear infinite;
-	animation:cloud3move 10s linear infinite;
+	-webkit-animation:cloud3-animate 10s linear infinite;
+	-moz-animation:cloud3-animate 10s linear infinite;
+	-o-animation:cloud3-animate 10s linear infinite;
+	animation:cloud3-animate 10s linear infinite;
 }
 
 .cloud4,
 .cloud4:before,
 .cloud4:after {
-	-webkit-animation:cloud4move 17s linear 1.5s infinite backwards;
-	-moz-animation:cloud4move 17s linear 1.5s infinite backwards;
-	-o-animation:cloud4move 17s linear 1.5s infinite backwards;
-	animation:cloud4move 17s linear 1.5s infinite backwards;
+	-webkit-animation:cloud4-animate 17s linear 1.5s infinite backwards;
+	-moz-animation:cloud4-animate 17s linear 1.5s infinite backwards;
+	-o-animation:cloud4-animate 17s linear 1.5s infinite backwards;
+	animation:cloud4-animate 17s linear 1.5s infinite backwards;
 }
 
 .cloud5,
 .cloud5:before,
 .cloud5:after {
-	-webkit-animation:cloud5move 13s linear infinite;
-	-moz-animation:cloud5move 13s linear infinite;
-	-o-animation:cloud5move 13s linear infinite;
-	animation:cloud5move 13s linear infinite;
+	-webkit-animation:cloud5-animate 13s linear infinite;
+	-moz-animation:cloud5-animate 13s linear infinite;
+	-o-animation:cloud5-animate 13s linear infinite;
+	animation:cloud5-animate 13s linear infinite;
 }
 
-@-webkit-keyframes cloud1move {
+@-webkit-keyframes cloud1-animate {
 	0%   {left:90%;box-shadow:1px 0 2px 1px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-5%;}
 	100% {left:-100%;}
 }
-@-moz-keyframes cloud1move {
+@-moz-keyframes cloud1-animate {
 	0%   {left:90%;box-shadow:1px 0 2px 1px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-5%;}
 	100% {left:-100%;}
 }
-@-o-keyframes cloud1move {
+@-o-keyframes cloud1-animate {
 	0%   {left:90%;box-shadow:1px 0 2px 1px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-5%;}
 	100% {left:-100%;}
 }
-@keyframes cloud1move {
+@keyframes cloud1-animate {
 	0%   {left:90%;box-shadow:1px 0 2px 1px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-5%;}
 	100% {left:-100%;}
 }
 
-@-webkit-keyframes cloud2move {
+@-webkit-keyframes cloud2-animate {
 	0%   {left:103%;}
 	50%  {left:-3%;}
 	100% {left:-109%;}
 }
-@-moz-keyframes cloud2move {
+@-moz-keyframes cloud2-animate {
 	0%   {left:103%;}
 	50%  {left:-3%;}
 	100% {left:-109%;}
 }
-@-o-keyframes cloud2move {
+@-o-keyframes cloud2-animate {
 	0%   {left:103%;}
 	50%  {left:-3%;}
 	100% {left:-109%;}
 }
-@keyframes cloud2move {
+@keyframes cloud2-animate {
 	0%   {left:103%;}
 	50%  {left:-3%;}
 	100% {left:-109%;}
 }
 
-@-webkit-keyframes cloud3move {
+@-webkit-keyframes cloud3-animate {
 	0%   {left:102%;box-shadow:-1px 1px 3px .5px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-4%;}
 	100% {left:-110%;}
 }
-@-moz-keyframes cloud3move {
+@-moz-keyframes cloud3-animate {
 	0%   {left:102%;box-shadow:-1px 1px 3px .5px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-4%;}
 	100% {left:-110%;}
 }
-@-o-keyframes cloud3move {
+@-o-keyframes cloud3-animate {
 	0%   {left:102%;box-shadow:-1px 1px 3px .5px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-4%;}
 	100% {left:-110%;}
 }
-@keyframes cloud3move {
+@keyframes cloud3-animate {
 	0%   {left:102%;box-shadow:-1px 1px 3px .5px #fff;}
 	10%  {box-shadow:none;}
 	50%  {left:-4%;}
 	100% {left:-110%;}
 }
 
-@-webkit-keyframes cloud4move {
+@-webkit-keyframes cloud4-animate {
 	0%   {left:102%;}
 	50%  {left:0%;}
 	100% {left:-102%;}
 }
-@-moz-keyframes cloud4move {
+@-moz-keyframes cloud4-animate {
 	0%   {left:102%;}
 	50%  {left:0%;}
 	100% {left:-102%;}
 }
-@-o-keyframes cloud4move {
+@-o-keyframes cloud4-animate {
 	0%   {left:102%;}
 	50%  {left:0%;}
 	100% {left:-102%;}
 }
-@keyframes cloud4move {
+@keyframes cloud4-animate {
 	0%   {left:102%;}
 	50%  {left:0%;}
 	100% {left:-102%;}
 }
 
-@-webkit-keyframes cloud5move {
+@-webkit-keyframes cloud5-animate {
 	0%   {left:96%;box-shadow:-1px 0 5px 1.5px #fff;}
 	15%  {box-shadow:none;}
 	50%  {left:-2%;}
 	100% {left:-100%;}
 }
-@-moz-keyframes cloud5move {
+@-moz-keyframes cloud5-animate {
 	0%   {left:96%;box-shadow:-1px 0 5px 1.5px #fff;}
 	15%  {box-shadow:none;}
 	50%  {left:-2%;}
 	100% {left:-100%;}
 }
-@-o-keyframes cloud5move {
+@-o-keyframes cloud5-animate {
 	0%   {left:96%;box-shadow:-1px 0 5px 1.5px #fff;}
 	15%  {box-shadow:none;}
 	50%  {left:-2%;}
 	100% {left:-100%;}
 }
-@keyframes cloud5move {
+@keyframes cloud5-animate {
 	0%   {left:96%;box-shadow:-1px 0 5px 1.5px #fff;}
 	15%  {box-shadow:none;}
 	50%  {left:-2%;}
 	100% {left:-100%;}
+}
+
+@-webkit-keyframes cloud1-opacity {
+	0%   {opacity:.8;}
+	10%  {opacity:.9;}
+	100% {opacity:.9;}
+}
+@-moz-keyframes cloud1-opacity {
+	0%   {opacity:.8;}
+	10%  {opacity:.9;}
+	100% {opacity:.9;}
+}
+@-o-keyframes cloud1-opacity {
+	0%   {opacity:.8;}
+	10%  {opacity:.9;}
+	100% {opacity:.9;}
+}
+@keyframes cloud1-opacity {
+	0%   {opacity:.8;}
+	10%  {opacity:.9;}
+	100% {opacity:.9;}
 }
