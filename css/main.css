@@ -8,54 +8,18 @@ html, body {height: 100%;}
 .cloud:before, .cloud:after {display: block;content: '';background: #fff;}
 .cloud:before {width: 62px;height: 18px;margin-top: 18px;margin-left: -20px;border-radius: 9px;}
 .cloud:after {width: 20px;height: 30px;margin-top: -26px;margin-left: -12px;transform: skewX(10deg);border-radius: 10px;}
-.cloud1 {top: 1%;transform: scale(1.6);}
+.cloud1 {top: 1%;transform: scale(1.6);opacity: .8;}
 .cloud2 {top: 5%;transform: scale(1.5);opacity: .8;}
 .cloud3 {top: 12%;transform: scale(2);}
 .cloud4 {top: 30%;transform: scale(1.2);opacity: .7;}
-.cloud5 {top: 32%;transform: scale(1.6);}
+.cloud5 {top: 32%;transform: scale(1.6);opacity: .85;}
 .rabbit {position: absolute;right: 200px;bottom: 50px;width: 200px;height: 200px;background: url('../img/rabbit.png') center no-repeat;background-size: contain;}
-/* 云朵动画 */
-/* 为何不可同时对.cloud1, .cloud1:before, .cloud1:after设置透明度？ */
-.cloud1 {-webkit-animation: cloud1-animate 13.5s linear infinite backwards, cloud1-opacity 13.5s linear infinite backwards;-moz-animation: cloud1-animate 13.5s linear infinite backwards, cloud1-opacity 13.5s linear infinite backwards;-o-animation: cloud1-animate 13.5s linear infinite backwards, cloud1-opacity 13.5s linear infinite backwards;animation: cloud1-animate 13.5s linear infinite backwards, cloud1-opacity 13.5s linear infinite backwards;}
-.cloud1:before, .cloud1:after {-webkit-animation: cloud1-animate 13.5s linear infinite backwards;-moz-animation: cloud1-animate 13.5s linear infinite backwards;-o-animation: cloud1-animate 13.5s linear infinite backwards;animation: cloud1-animate 13.5s linear infinite backwards;}
-.cloud2, .cloud2:before, .cloud2:after {-webkit-animation: cloud2-animate 12s linear 2s infinite backwards;-moz-animation: cloud2-animate 12s linear 2s infinite backwards;-o-animation: cloud2-animate 12s linear 2s infinite backwards;animation: cloud2-animate 12s linear 2s infinite backwards;}
-.cloud3, .cloud3:before, .cloud3:after {-webkit-animation: cloud3-animate 10.5s linear infinite;-moz-animation: cloud3-animate 10.5s linear infinite;-o-animation: cloud3-animate 10.5s linear infinite;animation: cloud3-animate 10.5s linear infinite;}
-.cloud4 {-webkit-animation: cloud4-animate 17s linear 1.5s infinite backwards, cloud4-opacity 17s linear 1.5s infinite backwards;-moz-animation: cloud4-animate 17s linear 1.5s infinite backwards, cloud4-opacity 17s linear 1.5s infinite backwards;-o-animation: cloud4-animate 17s linear 1.5s infinite backwards, cloud4-opacity 17s linear 1.5s infinite backwards;animation: cloud4-animate 17s linear 1.5s infinite backwards, cloud4-opacity 17s linear 1.5s infinite backwards;}
-.cloud4:before, .cloud4:after {-webkit-animation: cloud4-animate 17s linear 1.5s infinite backwards;-moz-animation: cloud4-animate 17s linear 1.5s infinite backwards;-o-animation: cloud4-animate 17s linear 1.5s infinite backwards;animation: cloud4-animate 17s linear 1.5s infinite backwards;}
-.cloud5 {-webkit-animation: cloud5-animate 13s linear infinite backwards, cloud5-opacity 13s linear infinite backwards;-moz-animation: cloud5-animate 13s linear infinite backwards, cloud5-opacity 13s linear infinite backwards;-o-animation: cloud5-animate 13s linear infinite backwards, cloud5-opacity 13s linear infinite backwards;animation: cloud5-animate 13s linear infinite backwards, cloud5-opacity 13s linear infinite backwards;}
-.cloud5:before, .cloud5:after {-webkit-animation: cloud5-animate 13s linear infinite backwards;-moz-animation: cloud5-animate 13s linear infinite backwards;-o-animation: cloud5-animate 13s linear infinite backwards;animation: cloud5-animate 13s linear infinite backwards;}
+/* 云朵位移动画 */
+.cloud1, .cloud1:before, .cloud1:after, .cloud2, .cloud2:before, .cloud2:after, .cloud3, .cloud3:before, .cloud3:after, .cloud4, .cloud4:before, .cloud4:after, .cloud5, .cloud5:before, .cloud5:after {-webkit-animation: clouds-animate linear infinite backwards;-moz-animation: clouds-animate linear infinite backwards;-o-animation: clouds-animate linear infinite backwards;animation: clouds-animate linear infinite backwards;}
+.cloud1, .cloud1:before, .cloud1:after {-webkit-animation-duration: 13.5s;-moz-animation-duration: 13.5s;-o-animation-duration: 13.5s;animation-duration: 13.5s;}
+.cloud2, .cloud2:before, .cloud2:after {-webkit-animation-duration: 12s;-moz-animation-duration: 12s;-o-animation-duration: 12s;animation-duration: 12s;-webkit-animation-delay: 2.5s;-moz-animation-delay: 2.5s;-o-animation-delay: 2.5s;animation-delay: 2.5s;}
+.cloud3, .cloud3:before, .cloud3:after {-webkit-animation-duration: 10.5s;-moz-animation-duration: 10.5s;-o-animation-duration: 10.5s;animation-duration: 10.5s;-webkit-animation-delay: 1s;-moz-animation-delay: 1s;-o-animation-delay: 1s;animation-delay: 1s;}
+.cloud4, .cloud4:before, .cloud4:after {-webkit-animation-duration: 17s;-moz-animation-duration: 17s;-o-animation-duration: 17s;animation-duration: 17s;-webkit-animation-delay: 2s;-moz-animation-delay: 2s;-o-animation-delay: 2s;animation-delay: 2s;}
+.cloud5, .cloud5:before, .cloud5:after {-webkit-animation-duration: 12.5s;-moz-animation-duration: 12.5s;-o-animation-duration: 12.5s;animation-duration: 12.5s;-webkit-animation-delay: .5s;-moz-animation-delay: .5s;-o-animation-delay: .5s;animation-delay: .5s;}
 /* 云朵位移动画关键帧 */
-@-webkit-keyframes cloud1-animate {0% {left: 90%;box-shadow: 1px 0 2px 1px #fff;}10% {box-shadow: none;}100% {left: -100%;}}
-@-moz-keyframes cloud1-animate {0% {left: 90%;box-shadow: 1px 0 2px 1px #fff;}10% {box-shadow: none;}100% {left: -100%;}}
-@-o-keyframes cloud1-animate {0% {left: 90%;box-shadow: 1px 0 2px 1px #fff;}10% {box-shadow: none;}100% {left: -100%;}}
-@keyframes cloud1-animate {0% {left: 90%;box-shadow: 1px 0 2px 1px #fff;}10% {box-shadow: none;}100% {left: -100%;}}
-@-webkit-keyframes cloud2-animate {0% {left: 103%;}100% {left: -109%;}}
-@-moz-keyframes cloud2-animate {0% {left: 103%;}100% {left: -109%;}}
-@-o-keyframes cloud2-animate {0% {left: 103%;}100% {left: -109%;}}
-@keyframes cloud2-animate {0% {left: 103%;}100% {left: -109%;}}
-@-webkit-keyframes cloud3-animate {0% {left: 102%;box-shadow: -1px 1px 3px .5px #fff;}10% {box-shadow: none;}100% {left: -110%;}}
-@-moz-keyframes cloud3-animate {0% {left: 102%;box-shadow: -1px 1px 3px .5px #fff;}10% {box-shadow: none;}100% {left: -110%;}}
-@-o-keyframes cloud3-animate {0% {left: 102%;box-shadow: -1px 1px 3px .5px #fff;}10% {box-shadow: none;}100% {left: -110%;}}
-@keyframes cloud3-animate {0% {left: 102%;box-shadow: -1px 1px 3px .5px #fff;}10% {box-shadow: none;}100% {left: -110%;}}
-@-webkit-keyframes cloud4-animate {0% {left: 102%;}100% {left: -102%;}}
-@-moz-keyframes cloud4-animate {0% {left: 102%;}100% {left: -102%;}}
-@-o-keyframes cloud4-animate {0% {left: 102%;}100% {left: -102%;}}
-@keyframes cloud4-animate {0% {left: 102%;}100% {left: -102%;}}
-@-webkit-keyframes cloud5-animate {0% {left: 96%;box-shadow: -1px 0 5px 1.5px #fff;}15% {box-shadow: none;}100% {left: -100%;}}
-@-moz-keyframes cloud5-animate {0% {left: 96%;box-shadow: -1px 0 5px 1.5px #fff;}15% {box-shadow: none;}100% {left: -100%;}}
-@-o-keyframes cloud5-animate {0% {left: 96%;box-shadow: -1px 0 5px 1.5px #fff;}15% {box-shadow: none;}100% {left: -100%;}}
-@keyframes cloud5-animate {0% {left: 96%;box-shadow: -1px 0 5px 1.5px #fff;}15% {box-shadow: none;}100% {left: -100%;}}
-/* 云朵透明度动画关键帧 */
-/* 云朵位移过程中是否有透明度变化，我并不确定 */
-@-webkit-keyframes cloud1-opacity {0% {opacity: .8;}10% {opacity: .85;}100% {opacity: .85;}}
-@-moz-keyframes cloud1-opacity {0% {opacity: .8;}10% {opacity: .85;}100% {opacity: .85;}}
-@-o-keyframes cloud1-opacity {0% {opacity: .8;}10% {opacity: .85;}100% {opacity: .85;}}
-@keyframes cloud1-opacity {0% {opacity: .8;}10% {opacity: .85;}100% {opacity: .85;}}
-@-webkit-keyframes cloud4-opacity {0% {opacity: .68;}10% {opacity: .73;}100% {opacity: .73;}}
-@-moz-keyframes cloud4-opacity {0% {opacity: .68;}10% {opacity: .73;}100% {opacity: .73;}}
-@-o-keyframes cloud4-opacity {0% {opacity: .68;}10% {opacity: .73;}100% {opacity: .73;}}
-@keyframes cloud4-opacity {0% {opacity: .68;}10% {opacity: .73;}100% {opacity: .73;}}
-@-webkit-keyframes cloud5-opacity {0% {opacity: .85;}10% {opacity: .9;}100% {opacity: .9;}}
-@-moz-keyframes cloud5-opacity {0% {opacity: .85;}10% {opacity: .9;}100% {opacity: .9;}}
-@-o-keyframes cloud5-opacity {0% {opacity: .85;}10% {opacity: .9;}100% {opacity: .9;}}
-@keyframes cloud5-opacity {0% {opacity: .85;}10% {opacity: .9;}100% {opacity: .9;}}
+@keyframes clouds-animate {0% {left: 105%;box-shadow: 0 0 2px 1px #fff;}10% {box-shadow: none;}100% {left: -125%;}}
